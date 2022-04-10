@@ -13,26 +13,100 @@ body {
 
     font-family: 'Roboto', sans-serif;
     background-color:#12182E;
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-position: 0px 300px;
+
+}
+                            /*Navigation bar*/
+nav,
+#menu-checkbox {
+    display: none;
+}
+#menu-checkbox:checked ~ nav {
+    display: block;
 }
 
-/*Navigation bar*/
-
 header {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 55px;
-    position: fixed;
+    position: relative;
+    background-color: #12182E;
+    background-image: linear-gradient(#12182E, #606473);
+    color: #fff;
+    padding: 0px;
+    font-size: 1.5rem;
+}
+nav {
+    position: absolute;
+    background: #12182E;
+    background-image: linear-gradient(#12182E, #606473);
+    left: 0px;
+}
+nav a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+li a {
+    transition: all 0.3s;
+}
+
+li a:hover {
+    color: #3FA535;
+}
+
+h3 {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+@media (min-width: 600px){
+
+    /*Navigation bar*/
+
+
+
+header, nav {
+    height: 65px;
     display: flex;
+    position: relative;
     background-color: #12182E;
     background-image: linear-gradient(#12182E, #606473);
     align-items: center;
 
 }
 
+li a {
+    transition: all 0.3s;
+}
+
+li a:hover {
+    color: #3FA535;
+}
+
+li, a {
+    font-family: 'Avenir LT Std', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 40px;
+    list-style: none;
+    display: inline-block;
+    line-height: 75px;
+
+
+}
+
+  .logo {
+    cursor: pointer;
+    max-width: auto;
+    transform: translate(-10%, 30%);
+  }
+
+
+
+/*Grid*/
 .parent {
 
     display: grid;
@@ -41,7 +115,7 @@ header {
     grid-column-gap: 0px;
     grid-row-gap: 150px; 
     width: 100%;
-    height: 100%;
+    color: #3FA535;
 
     }
     
@@ -51,41 +125,11 @@ header {
 .div4 { grid-area: 4 / 1 / 5 / 3; }
 .div5 { grid-area: 5 / 1 / 6 / 3; } 
 
-
-
-
-.nav-links li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 35px;
-}
-
-.nav-links li a {
-    transition: all 0.3s;
-}
-
-.nav-links li a:hover {
-    color: #3FA535;
-}
-
-
-li, a {
-    font-family: 'Avenir LT Std', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 10px;
-    list-style: none;
-    display: inline-block;
-}
-
-  .logo {
-    cursor: pointer;
-    max-width: auto;
-  }
-
-@media only screen and (min-width: 600px){
-
+.div1 { 
+    border-color: #3FA535; }
+.div2 { grid-area: 2 / 1 / 3 / 3; }
+.div3 { grid-area: 3 / 1 / 4 / 3; }
+.div4 { grid-area: 4 / 1 / 5 / 3; }
+.div5 { grid-area: 5 / 1 / 6 / 3; } 
 
 }
