@@ -1,0 +1,35 @@
+.cart-image {
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cart-container {
+    display: flex;
+    cursor: crosshair;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.cart-boarder {
+    display: flex;
+    background-color: #707070;
+    border-radius: 20px;
+    padding: 150px;
+
+}
+
+li {
+    list-style: none;
+}
+
+@media (min-width: 600px){
+
+.cart-container {
+    display: flex;
+    cursor: crosshair;
+    justify-content: center;
+    padding: 50px;
+}
+
+
