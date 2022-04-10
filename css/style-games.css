@@ -29,7 +29,7 @@ header {
     background-color: #12182E;
     background-image: linear-gradient(#12182E, #606473);
     color: #fff;
-    padding: 0px;
+    padding: 5px;
     font-size: 1.5rem;
 }
 nav {
@@ -53,6 +53,10 @@ li a {
 li a:hover {
     color: #3FA535;
 }
+
+li a:active {
+    color: #3FA535;
+  }
 
 h3 {
     display: inline-block;
