@@ -62,6 +62,18 @@ a:active {
     color: #3FA535;
   }
 
+  footer {
+    display: block;
+    position: static;
+    background-color: #12182E;
+    background-image: linear-gradient(#12182E, #606473);
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+}
+
 
 
 @media (min-width: 600px){
@@ -97,4 +109,17 @@ li a:hover {
 
   }
 
+footer {
+    display: block;
+    position: static;
+    background-color: #12182E;
+    background-image: linear-gradient(#12182E, #606473);
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+
+
+}
 }

@@ -4,15 +4,15 @@ h2 {
     padding: 15px 15px 30px;
 }
 
-.card, .img {
+.card {
 
-    width: 300px;
+    width: 200px;
 }
 
-.card-image, .game-image {
-    width: 300px;
-    padding-left: 20px;
-    padding-right: 20px;
+.card-image {
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card-container {
@@ -34,30 +34,142 @@ font-size: 2rem;
 justify-content: center;
 }
 
+.image {
+    width: 300px;
+    padding: 30px;
 
-.image-element {
-    width: 300px;
 }
-.game-image {
-    width: 300px;
+
+.image-center {
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
 }
 
-.game-price {
+.details {
     display: flex;
-    justify-content: row;
+    justify-content: center;
+    font-style: solid;
+    padding: 20px;
 }
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.cta-button, .video-button {
+    width: 300px;
+    padding: 30px;
+
+}
+
+.cta-button {
+display:inline-block;
+padding:0.5em 3em;
+border:0.16em solid #FFFFFF;
+margin:0 0.3em 0.3em 0;
+box-sizing: border-box;
+text-decoration:none;
+text-transform:uppercase;
+font-family:'Roboto',sans-serif;
+font-weight:400;
+color:#FFFFFF;
+background-color: #3FA535;
+text-align:center;
+cursor: pointer;
+transition: all 0.15s;
+
+}
+
+li a {
+    transition: all 0.3s;
+}
+
+li a:hover {
+    color: #3FA535;
+}
+
+a:active {
+    color: #3FA535;
+  }
+
+footer {
+    display: block;
+    background: #12182E;
+    background-image: linear-gradient(#12182E, #606473);
+    text-align: center;
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
 .title {
     font-size: 2rem;
     display: flex;
     justify-content: center;
+    padding-top: 15px;
+}
+
+.information {
+    display: flex;
+    padding: 50px 20px 20px 50px;
+    justify-content: flex-end;
 }
 
 @media (min-width: 600px){
 
-.card-container {
+
+    .card {
+
+        width: 100%;
+
+    }
+    
+    .card-image {
+        width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .card-container {
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+        cursor: grab;
+        justify-content: center;
+        
+    }
+    
+    .card-boarder {
+        display: flex;
+        background-color: #707070;
+        border-radius: 30px;
+        padding: 15px;
+    }
+.image-center {
+    display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.information {
+    display: flex;
+    padding-left: 90px;
+    padding-top: 90px;
+    padding-right: 30px;
+    justify-content: flex-end;
 }
 
 }
