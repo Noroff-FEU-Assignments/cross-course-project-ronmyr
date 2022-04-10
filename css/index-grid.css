@@ -1,0 +1,125 @@
+h1 {
+    font-size: 2rem;
+    text-align: center;
+ }
+
+ h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: lighter;
+    color: #3FA535;
+ }
+ h3 {
+    font-size: 0.8rem;
+    text-align: center;
+ }
+
+ .grid-item-3 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
+footer {
+    display: block;
+    position: static;
+    background-color: #12182E;
+    background-image: linear-gradient(#12182E, #606473);
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+
+    
+    
+}
+
+
+@media (min-width: 600px){
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 500px 500px 500px;
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 100px;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        min-width: 600px;
+    }
+    
+    
+    .grid-item-1 {
+        grid-column: span 3;
+    }
+    
+    .grid-item-2 {
+        grid-column: span 1;
+        grid-column: 250px 250px;
+    }
+    
+    .grid-item-3 {
+        grid-column: span 1;
+        grid-column: auto;
+        align-items: flex-end;
+    }
+    
+    .grid-item-4 {
+        grid-column: span 1;
+        grid-column: 250px 250px;
+    }
+    
+    .grid-item-5 {
+        grid-column: span 1;
+        grid-column: 250px 250px;
+        }
+    
+    .grid-item-6 {
+        grid-column: span 1;
+        grid-column: 250px 250px;
+        }
+    .grid-item-7 {
+        grid-column: span 1;
+        grid-column: 250px 250px;
+        }
+        
+    .grid-item-8 {
+        grid-column: span 3;
+        grid-column: 250px 250px;
+    
+        }
+
+    body {
+        background-image: url(..//images/background-layout.png);
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-position: 0px 300px;
+    }
+    
+    h1 {
+        color: #ffffff;
+        font-family: jaf-bernina-sans-comp,sans-serif;
+        font-style: normal;
+        font-size: 3rem;
+        text-align: center;
+    
+    
+    }
+    
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        font-size: 2rem;
+        color: #3FA535;
+        text-align: center;
+    }
+    
+    h3 {
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+    } 
+}

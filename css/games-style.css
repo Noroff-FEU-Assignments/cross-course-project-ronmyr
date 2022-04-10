@@ -1,0 +1,30 @@
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px 15px 30px;
+}
+
+.card {
+
+    width: 300px;
+}
+
+.card-image {
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-container {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    cursor: grab;
+}
+
+.card-boarder {
+    display: flex;
+    background-color: #707070;
+    border-radius: 30px;
+    padding: 15px;
+}
