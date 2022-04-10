@@ -4,12 +4,12 @@ h2 {
     padding: 15px 15px 30px;
 }
 
-.card {
+.card, .img {
 
     width: 300px;
 }
 
-.card-image {
+.card-image, .game-image {
     width: 300px;
     padding-left: 20px;
     padding-right: 20px;
@@ -27,4 +27,37 @@ h2 {
     background-color: #707070;
     border-radius: 30px;
     padding: 15px;
+}
+
+h1 {
+font-size: 2rem;
+justify-content: center;
+}
+
+
+.image-element {
+    width: 300px;
+}
+.game-image {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.game-price {
+    display: flex;
+    justify-content: row;
+}
+.title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 600px){
+
+.card-container {
+    justify-content: center;
+}
+
 }
