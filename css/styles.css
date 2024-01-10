@@ -13,11 +13,14 @@ body {
 
     font-family: 'Roboto', sans-serif;
     background-color:#12182E;
+    background-image: url(..//images/background-layout.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 300px;
 
 }
 
-
-                            /*Navigation bar*/
+/*Navigation bar*/
 nav,
 #menu-checkbox {
     display: none;
@@ -35,6 +38,12 @@ header {
     padding: 5px;
     font-size: 1.5rem;
 }
+
+main {
+    margin: 5%;
+
+}
+
 nav {
     position: absolute;
     background: #12182E;
@@ -50,6 +59,14 @@ nav a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
 li a {
     transition: all 0.3s;
 }
@@ -61,6 +78,7 @@ li a:hover {
 a:active {
     color: #3FA535;
   }
+  
 
   footer {
     display: block;
@@ -75,8 +93,8 @@ footer li {
 }
 
 
-
-@media (min-width: 600px){
+/* Desktop */
+@media (min-width: 660px) {
 
     /*Navigation bar*/
 
@@ -86,7 +104,7 @@ nav {
 }
 
 .meny {
-    display:none;
+    display: none;
 }
 
 nav li {
