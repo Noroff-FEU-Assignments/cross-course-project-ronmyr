@@ -169,4 +169,7 @@ footer {
     justify-content: flex-end;
 }
 
-}
+@media (max-width: 1150px){
+.card-container {
+    overflow: scroll;
+}}}
