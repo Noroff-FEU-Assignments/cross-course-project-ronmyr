@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="View out most popular games!"/>
-    <title>The Universe of games | The game Cyberpunk</title>
+    
+    <title>The Universe of games | Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="..//css/styles.css" rel="stylesheet">
-        <link href="..//css/games-style.css" rel="stylesheet">
-        
+        <link href="..//css/contact.css" rel="stylesheet">
         <link href="https://use.typekit.net/jdi6qwy.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9d14b9ec2f.js" crossorigin="anonymous"></script>
 </head>
@@ -19,16 +19,18 @@
     <header>
         <input type="checkbox" id="menu-checkbox"/>
         <label for="menu-checkbox" class="meny"><i class="fa-solid fa-bars"></i></label>
-            <nav>
+        <nav>
+            <ul>
                 <li><a href="..//index.html"><img class="logo" src="..//images/icons/GameHub_Logo.png" alt="logo"></a></li>
                 <li><a href="..//index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="..//games.html"><i class="fa-solid fa-dice-d6"></i> Games</a></li>
-                <li><a href="/contact.html"><i class="fa-solid fa-user"></i> Contact</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-user"></i> Contact</a></li>
                 <li class="cart-container">
                     <i class="fa-solid fa-cart-shopping">
                     <span class="cart-counter">0</span>
-                        </i></li>
-            </nav>
+                    </i>
+                </li>
+            </ul>
             <form id="cart" action="/create-checkout-session" method="POST" style="display: none;">
                 <div class="cart-item">
                     <img src="/images/games/Assassin.jpg" alt="Assassin, newest realease">
@@ -40,36 +42,38 @@
                             <div class="center">
                             <p class="cart-item-total"></p><button class="cta-button">Checkout</button></form>
                         </div>
-            </nav>
-    </header>
-    <main> 
-        <div>
-            <section>
-                <h1 class="title">Cyberpunk</h1><br>
-                <div class="image-center">
-                        <img class="image" src="..//images/games/Cyberpunk.jpg"/>
-                    </div>
-            </section>
-            <section>
-                <div class="details">
-                    <h4>6.20$</h4>
-                </div>
-            </section>
-                <div class="button-center">
-                    <div class="button">
-                        <div class="cta-button cta-action">BUY NOW</div>
-                            </div>
-                                </div>
-                        <div class="button2">
-                        </div>
-                            </div>
-                                </div>
-                                    <div class="information">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae neque distinctio illo laboriosam rem ad consequatur esse! Ullam accusantium quibusdam harum quia veritatis. Possimus dolorem, itaque ex voluptatum maxime aut!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae neque distinctio illo laboriosam rem ad consequatur esse! Ullam accusantium quibusdam harum quia veritatis. Possimus dolorem, itaque ex voluptatum maxime aut.</p>
-                                    </div>
-                                        </div>
-    </main>
-    <script src="..//js/checkout.js"></script>
+        </nav>
+        <div class="contact-container">
+        <h1 class="heading">Contact Us</h1>
+        <div class="success-align" id="successMessage"></div>
+      <div class="heading">
+      <form id="contactForm">
+        <div class="contact-styling">
+          <label for="name">Name:</label> 
+          <input type="text" class="contact-text" id="name" name="name" required>
+          <div id="nameError" class="error"></div>
+        </div>
+        <div class="contact-styling">
+          <label for="subject">Subject:</label>
+          <input type="text" class="contact-text" id="subject" name="subject">
+          <div id="subjectError" class="error"></div>
+        </div>
+        <div class="contact-styling">
+          <label for="email">Email:</label>
+          <input type="email" class="contact-text" id="email" name="email" required>
+          <div id="emailError" class="error"></div>
+        </div>
+        <div class="contact-styling">
+          <label for="address">Address:</label>
+          <input type="text" class="contact-text" id="address" name="address">
+          <div id="addressError" class="error"></div>
+        </div>
+        <button type="submit" class="cta-button">Submit</button>
+      </form>
+      </div>
+      </div>
+    <script src="js/contact.js"></script>
+    <script src="js/checkout.js"></script>
 </body>
 <footer>
     <ul class="footer-down">

@@ -35,15 +35,29 @@
                     <li><a href="index.html"><img class="logo" src="images/icons/GameHub_Logo.png" alt="logo"></a></li>
                     <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                     <li><a href="games.html"><i class="fa-solid fa-dice-d6"></i> Games</a></li>
-                    <li><a href="shopping.html"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a></li>
-                    <li><a href="account.html"><i class="fa-solid fa-user"></i> Account</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-user"></i> Contact</a></li>
                 </ul>
+                <li class="cart-container">
+                    <i class="fa-solid fa-cart-shopping">
+                    <span class="cart-counter">0</span>
+                        </i></li>
             </nav>
+            <form id="cart" action="/create-checkout-session" method="POST" style="display: none;">
+                <div class="cart-item">
+                    <img src="/images/games/Assassin.jpg" alt="Assassin, newest realease">
+                    <div class="cart-item-texts"><i class="fa-regular fa-trash-can"></i><p>Assassin</p>
+                        <span class="cart-item-total">0</span>
+                    </p>
+                        </div>
+                            </div>
+                            <div class="center">
+                            <p class="cart-item-total"></p><button class="cta-button">Checkout</button></form>
+                        </div>
         </header>
         <main>
         <div class="grid-container">
             <div class="grid-item grid-item-1">
-                <h1>Welcome to Game Hub</h1><br>
+                <h1 class="welcome-">Welcome to Game Hub</h1><br>
                 <h2 class="universe-of-gaming">The Universe Of Gaming!</h2><br>
             </div>
             <div class="grid-item grid-item-2">
@@ -65,10 +79,10 @@
                 <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</h3><br>
                 </div>
             </div>
-
             </div>
             </div>
         </div>
+        <script src="js/checkout.js"></script>
     </main>
     <footer>
         <ul class="footer-links">

@@ -34,9 +34,23 @@
                     <li><a href="index.html"><img class="logo" src="images/icons/GameHub_Logo.png" alt="logo"></a></li>
                     <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                     <li><a href="games.html"><i class="fa-solid fa-dice-d6"></i> Games</a></li>
-                    <li><a href="shopping.html"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a></li>
-                    <li><a href="account.html"><i class="fa-solid fa-user"></i> Account</a></li>
-            </nav>
+                    <li><a href="contact.html"><i class="fa-solid fa-user"></i> Contact</a></li>
+                    <li class="cart-container">
+                        <i class="fa-solid fa-cart-shopping">
+                        <span class="cart-counter">0</span>
+                            </i></li>
+                </nav>
+                <form id="cart" action="/create-checkout-session" method="POST" style="display: none;">
+                    <div class="cart-item">
+                        <img src="/images/games/Assassin.jpg" alt="Assassin, newest realease">
+                        <div class="cart-item-texts"><i class="fa-regular fa-trash-can"></i><p>Assassin</p>
+                            <span class="cart-item-total">0</span>
+                        </p>
+                            </div>
+                                </div>
+                                <div class="center">
+                                <p class="cart-item-total"></p><button class="cta-button">Checkout</button></form>
+                            </div>
     </header>
     <main>
         <section>
@@ -151,6 +165,7 @@
         </section>
     </main>
     </div>
+    <script src="js/checkout.js"></script>
 </body>
 <footer>
     <ul class="footer-links">

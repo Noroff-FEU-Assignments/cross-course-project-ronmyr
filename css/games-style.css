@@ -115,8 +115,6 @@ footer {
 
 .title {
     font-size: 2rem;
-    display: flex;
-    justify-content: center;
     padding-top: 15px;
 }
 
