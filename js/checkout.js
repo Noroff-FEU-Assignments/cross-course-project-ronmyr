@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const buyNowButtons = document.querySelectorAll('.cta-button');
     const cartCounter = document.querySelector('.cart-counter');
-    const cartContainer = document.querySelectorAll('.cart-container');
+    const cartContainers = document.querySelectorAll('.cart-container');
     const cartForm = document.getElementById('cart');
     const detailsTitle = document.querySelector('.title');
     const detailsPrice = document.querySelector('.details h4');
@@ -31,13 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    cartContainer.addEventListener('click', function () {
-        if (cartForm.style.display === 'block') {
-            cartForm.style.display = 'none';
-        } else {
-            cartForm.style.display = 'block';
-            displayCartItems();
-        }
+    // Itererer over hver cart container hvis det er flere
+    cartContainers.forEach(function (container) {
+        container.addEventListener('click', function () {
+            if (cartForm.style.display === 'block') {
+                cartForm.style.display = 'none';
+            } else {
+                cartForm.style.display = 'block';
+                displayCartItems();
+            }
+        });
     });
 
     cartItemContainer.addEventListener('click', function (event) {
