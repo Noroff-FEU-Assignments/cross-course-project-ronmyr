@@ -25,11 +25,6 @@
                 <li><a href="..//index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="..//games.html"><i class="fa-solid fa-dice-d6"></i> Games</a></li>
                 <li><a href="contact.html"><i class="fa-solid fa-user"></i> Contact</a></li>
-                <li class="cart-container">
-                    <i class="fa-solid fa-cart-shopping">
-                    <span class="cart-counter">0</span>
-                    </i>
-                </li>
             </ul>
             <form id="cart" action="/create-checkout-session" method="POST" style="display: none;">
                 <div class="cart-item">
@@ -43,6 +38,10 @@
                             <p class="cart-item-total"></p><button class="cta-button">Checkout</button></form>
                         </div>
         </nav>
+        <div class="cart-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-counter">0</span>
+            </div>
         <div class="contact-container">
         <h1 class="heading">Contact Us</h1>
         <div class="success-align" id="successMessage"></div>

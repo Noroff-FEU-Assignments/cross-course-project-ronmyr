@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const buyNowButtons = document.querySelectorAll('.cta-button');
     const cartCounter = document.querySelector('.cart-counter');
-    const cartContainer = document.querySelector('.cart-container');
+    const cartContainer = document.querySelectorAll('.cart-container');
     const cartForm = document.getElementById('cart');
     const detailsTitle = document.querySelector('.title');
     const detailsPrice = document.querySelector('.details h4');
