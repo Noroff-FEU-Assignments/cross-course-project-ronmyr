@@ -19,12 +19,6 @@
 
 }
 
-.error {
-    font-size: 1rem;
-    padding: 50px;
-    color: red;
-}
-
 .contact-container {
     display: flex;
     flex-direction: column;

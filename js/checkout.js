@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Itererer over hver cart container hvis det er flere
     cartContainers.forEach(function (container) {
         container.addEventListener('click', function () {
             if (cartForm.style.display === 'block') {
@@ -56,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-                // Legg til denne linjen for å skjule kurvformularet når det er tomt
                 if (Object.keys(cartItems).length === 0) {
                     cartForm.style.display = 'none';
                 }
